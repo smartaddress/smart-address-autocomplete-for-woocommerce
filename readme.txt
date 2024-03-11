@@ -48,10 +48,16 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 
 == Changelog ==
 
+= 1.0.1 =
+* Updated the source URL for the `smart-address.js` script to use our CDN for improved performance and reliability.
+
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Updated the source URL for the `smart-address.js` script to use our CDN for improved performance and reliability.
 
 = 1.0.0 =
 * Initial release.
