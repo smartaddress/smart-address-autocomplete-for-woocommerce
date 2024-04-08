@@ -5,8 +5,8 @@ if (!defined('ABSPATH')) {
 }
 
 // Add a settings tab in WooCommerce.
-add_filter('woocommerce_settings_tabs_array', 'add_smart_address_settings_tab', 50);
-function add_smart_address_settings_tab($settings_tabs)
+add_filter('woocommerce_settings_tabs_array', 'smart_address_settings_tab', 50);
+function smart_address_settings_tab($settings_tabs)
 {
     $settings_tabs['smart_address'] = __('Smart Address', 'smart-address');
     return $settings_tabs;
@@ -16,18 +16,18 @@ function add_smart_address_settings_tab($settings_tabs)
 add_action('woocommerce_settings_tabs_smart_address', 'smart_address_settings');
 function smart_address_settings()
 {
-    woocommerce_admin_fields(get_smart_address_settings());
+    woocommerce_admin_fields(smart_address_get_settings());
 }
 
 // Save the settings.
-add_action('woocommerce_update_options_smart_address', 'update_smart_address_settings');
-function update_smart_address_settings()
+add_action('woocommerce_update_options_smart_address', 'smart_address_update_settings');
+function smart_address_update_settings()
 {
-    woocommerce_update_options(get_smart_address_settings());
+    woocommerce_update_options(smart_address_get_settings());
 }
 
 // Define the settings.
-function get_smart_address_settings()
+function smart_address_get_settings()
 {
 
     $settings = array(

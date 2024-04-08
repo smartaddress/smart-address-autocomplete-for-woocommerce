@@ -4,7 +4,7 @@ Tags: woocommerce, address, autocomplete, checkout
 Requires at least: 5.0
 Tested up to: 6.4.3
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,8 @@ Features:
 * Supports both billing and shipping address fields.
 * Lightweight and fast, with virtually no impact on site performance.
 * Easy setup with a simple settings page in WooCommerce.
+
+*NOTE:* The Smart Address for WooCommerce plugin is a convenint way to consume the [Smart Address API](https://smartaddress.au). Once activated, the plugin loads an external javascript library from https://smartaddress.au, in order to enable address autocompletion on you WooCommerce chechout page. In order to use the plugin, you have to create a free account on [https://smartaddress.au](https://smartaddress.au), generate an API key and provide it in the plugin's settings. Paid plans are also available, offering additional features and capabilities. 
 
 == Installation ==
 
@@ -48,6 +50,9 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 
 == Changelog ==
 
+= 1.0.2 =
+* Replaced plugin license, improved documentation for the external service used by the plugin and fix plugin prefix. 
+
 = 1.0.1 =
 * Updated the source URL for the `smart-address.js` script to use our CDN for improved performance and reliability.
 
@@ -55,6 +60,9 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* Replaced plugin license, improved documentation for the external service used by the plugin and fix plugin prefix. 
 
 = 1.0.1 =
 * Updated the source URL for the `smart-address.js` script to use our CDN for improved performance and reliability.
