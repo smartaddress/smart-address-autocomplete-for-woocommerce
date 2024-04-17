@@ -4,7 +4,7 @@ Tags: woocommerce, address, autocomplete, checkout
 Requires at least: 5.0
 Tested up to: 6.4.3
 Requires PHP: 7.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 
 == Changelog ==
 
+= 1.0.3 =
+* Fixed text domain and improved plugin header declaration. 
+
 = 1.0.2 =
 * Replaced plugin license, improved documentation for the external service used by the plugin and fix plugin prefix. 
 
@@ -60,6 +63,9 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+* Fixed text domain and improved plugin header declaration. 
 
 = 1.0.2 =
 * Replaced plugin license, improved documentation for the external service used by the plugin and fix plugin prefix. 
