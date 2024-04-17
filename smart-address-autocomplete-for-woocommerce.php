@@ -2,15 +2,16 @@
 /*
 Plugin Name: Smart Address Autocomplete for WooCommerce
 Description: Unit-level Australian address autocomplete for WooCommerce. Accuracy and affordability redefined. Never miss a delivery again!
-Version: 1.0.2
+Version: 1.0.3
 Author: <a href="https://smartaddress.au">Smart Address</a>
+License: GPLv3 or later
+Text Domain: smart-address-autocomplete-for-woocommerce
+Requires Plugins: woocommerce
 */
 
-define('SMART_ADDRESS_VERSION', '1.0.2');
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly.
-}
+define('SMART_ADDRESS_VERSION', '1.0.3');
 
 // Check if WooCommerce is active.
 if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
@@ -45,7 +46,7 @@ function smart_address_uninstall()
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'smart_address_action_links');
 function smart_address_action_links($links)
 {
-    $settings_link = '<a href="' . admin_url('admin.php?page=wc-settings&tab=smart_address') . '">' . __('Settings', 'smart-address') . '</a>';
+    $settings_link = '<a href="' . admin_url('admin.php?page=wc-settings&tab=smart_address') . '">' . __('Settings', 'smart-address-autocomplete-for-woocommerce') . '</a>';
     array_unshift($links, $settings_link);
     return $links;
 }

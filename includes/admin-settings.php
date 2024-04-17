@@ -1,14 +1,12 @@
 <?php
 
-if (!defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 // Add a settings tab in WooCommerce.
 add_filter('woocommerce_settings_tabs_array', 'smart_address_settings_tab', 50);
 function smart_address_settings_tab($settings_tabs)
 {
-    $settings_tabs['smart_address'] = __('Smart Address', 'smart-address');
+    $settings_tabs['smart_address'] = __('Smart Address', 'smart-address-autocomplete-for-woocommerce');
     return $settings_tabs;
 }
 
@@ -32,31 +30,31 @@ function smart_address_get_settings()
 
     $settings = array(
         'section_title' => array(
-            'name'     => __('Smart Address Settings', 'smart-address'),
+            'name'     => __('Smart Address Settings', 'smart-address-autocomplete-for-woocommerce'),
             'type'     => 'title',
             'desc'     => '',
             'id'       => 'smart_address_section_title'
         ),
         'api_key' => array(
-            'name' => __('API Key', 'smart-address'),
+            'name' => __('API Key', 'smart-address-autocomplete-for-woocommerce'),
             'type' => 'text',
-            'desc' => __('Enter your API key here. <a href="https://smartaddress.au" target="_blank">Click here</a> to get one. ', 'smart-address'),
+            'desc' => __('Enter your API key here. <a href="https://smartaddress.au" target="_blank">Click here</a> to get one. ', 'smart-address-autocomplete-for-woocommerce'),
             'id'   => 'smart_address_api_key'
         ),
         'enable_extension' => array(
-            'name' => __('Enable Plugin', 'smart-address'),
+            'name' => __('Enable Plugin', 'smart-address-autocomplete-for-woocommerce'),
             'type' => 'checkbox',
-            'desc' => __('Enable the Smart Address plugin.', 'smart-address'),
+            'desc' => __('Enable the Smart Address plugin.', 'smart-address-autocomplete-for-woocommerce'),
             'id'   => 'smart_address_enable_extension'
         ),
         'country_list' => array(
-            'name' => __('Default Country', 'smart-address'),
+            'name' => __('Default Country', 'smart-address-autocomplete-for-woocommerce'),
             'type' => 'select',
-            'desc' => __('Select the default country.', 'smart-address'),
+            'desc' => __('Select the default country.', 'smart-address-autocomplete-for-woocommerce'),
             'id'   => 'smart_address_country_list',
             'options' => array(
-                'all' => __('All Countries', 'smart-address'),
-                'au'  => __('Australia', 'smart-address'),
+                'all' => __('All Countries', 'smart-address-autocomplete-for-woocommerce'),
+                'au'  => __('Australia', 'smart-address-autocomplete-for-woocommerce'),
             ),
             'default' => 'au'
         ),
