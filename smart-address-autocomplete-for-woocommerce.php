@@ -2,7 +2,7 @@
 /*
 Plugin Name: Smart Address Autocomplete for WooCommerce
 Description: Unit-level Australian address autocomplete for WooCommerce. Accuracy and affordability redefined. Never miss a delivery again!
-Version: 1.0.3
+Version: 1.0.4
 Author: <a href="https://smartaddress.au">Smart Address</a>
 License: GPLv3 or later
 Text Domain: smart-address-autocomplete-for-woocommerce
@@ -11,7 +11,7 @@ Requires Plugins: woocommerce
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define('SMART_ADDRESS_VERSION', '1.0.3');
+define('SMART_ADDRESS_VERSION', '1.0.4');
 
 // Check if WooCommerce is active.
 if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
