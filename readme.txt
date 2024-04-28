@@ -2,12 +2,13 @@
 Contributors: smartaddress
 Tags: woocommerce, address, autocomplete, checkout
 Requires at least: 5.0
-Tested up to: 6.4.3
+Tested up to: 6.5.2
 Requires PHP: 7.0
-Stable tag: 1.0.4
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+Enhance your WooCommerce store's checkout experience with the Smart Address Unit-Level  Address Autocomplete for WooCommerce plugin.
 
 == Description ==
 
@@ -62,34 +63,11 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 
 == Changelog ==
 
-= 1.0.4 =
-* Updated plugin description. 
-
-= 1.0.3 =
-* Fixed text domain and improved plugin header declaration. 
-
-= 1.0.2 =
-* Replaced plugin license, improved documentation for the external service used by the plugin and fix plugin prefix. 
-
-= 1.0.1 =
-* Updated the source URL for the `smart-address.js` script to use our CDN for improved performance and reliability.
-
 = 1.0.0 =
 * Initial release.
 
-== Upgrade Notice ==
-
-= 1.0.4 =
-* Updated plugin description. 
-
-= 1.0.3 =
-* Fixed text domain and improved plugin header declaration. 
+= 1.0.1 =
+* [UPDATE] Tested up to WordPress 6.5.2
 
 = 1.0.2 =
-* Replaced plugin license, improved documentation for the external service used by the plugin and fix plugin prefix. 
-
-= 1.0.1 =
-* Updated the source URL for the `smart-address.js` script to use our CDN for improved performance and reliability.
-
-= 1.0.0 =
-* Initial release.
+* [NEW] Redirect to Settings page on plugin activation
