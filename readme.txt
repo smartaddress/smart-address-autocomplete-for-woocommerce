@@ -4,7 +4,7 @@ Tags: woocommerce, address, autocomplete, checkout
 Requires at least: 5.0
 Tested up to: 6.5.2
 Requires PHP: 7.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
