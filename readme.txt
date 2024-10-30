@@ -71,3 +71,6 @@ Yes! Smart Address for WooCommerce supports autocomplete for both billing and sh
 
 = 1.0.2 =
 * [NEW] Redirect to Settings page on plugin activation
+
+= 1.0.3 =
+* [FIX] Updated script enqueuing 
